@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 10%;
+
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(11,1fr);
+    grid-template-columns: repeat(11,1fr);
+
+
+}
+.set-title{
+ background-color: yellow ;
+    grid-column-start:1 ;
+    grid-column-end:9 ;
+
+    grid-row-start:1;
+    grid-row-end:3;
+    
+    margin: 1px;
+
+}
+.nav1{
+    background-color: pink;
+    
+    grid-row-start:1;
+    grid-row-end:3;
+    margin: 1px;   
+
+}
+
+.nav2{
+    background-color: pink;
+    grid-row-start:1;
+    grid-row-end:3;
+    margin: 1px;
+}
+
+.nav3{
+    background-color: pink;
+   grid-row-start:1;
+    grid-row-end:3;
+    margin: 1px;
+}
+
+
+.post-title{
+    background-color: lightblue;
+    grid-row-start: 2;
+    grid-column-end: 2;
+
+    grid-column-start: 1;
+    grid-column-end: 10;
+
+    grid-row-start:3;
+    grid-row-end:5;
+    margin: 1px;
+    
+}
+.post-meta{
+    background-color:  green;
+    grid-row-start:5;
+    grid-row-end:12;
+
+    grid-column-end: 2;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 1px;
+
+
+}
+.main-content{
+    background-color: gray;
+    
+
+    grid-row-start:5;
+    grid-row-end:8;
+
+    grid-column-start:3;
+    grid-column-end: 10;
+    margin: 1px;
+}
+
+.main-image{
+    background-color: yellow;
+    grid-row-start: 4;
+    grid-column-end:4 ;
+
+    grid-row-start:8;
+    grid-row-end:12;
+
+    grid-column-start:3;
+    grid-column-end: 10;
+    margin: 1px;
+
+}
+
+.side-bar{
+    background-color: gold;
+    grid-row-start: 2;
+
+    grid-column-start:10;
+    grid-column-end:12 ;
+
+    grid-row-start:3;
+    grid-row-end:6;
+    margin: 1px;
+
+}
+
+.ads{
+    background-color: green;
+    grid-row-start: 5;
+    grid-column-end:12 ;
+
+    grid-column-start:10;
+    grid-column-end:12 ;
+
+    grid-row-start:6;
+    grid-row-end:9;
+    margin: 1px;
+
+}
+
+.other-stuffs{
+    background-color: violet;
+    grid-row-start: 9;
+    grid-row-end: 12;
+   
+
+    grid-column-start:10;
+    grid-column-end:12 ;
+    margin: 1px;
+    
+}
+
+.footer{
+    background-color: brown;
+    grid-column-start: 1;
+    grid-column-end: 12;
+
+}
+
+</style>
+<body>
+
+    <div class="container">
+        <div class="set-title">Set-title</div>
+        <div class="nav1">nav1</div>
+        <div class="nav2">nav2</div>
+        <div class="nav3">nav3</div>
+        <div class="post-title">post-title</div>
+        <div class="post-meta">post-meta</div>
+        <div class="main-content">main-content</div>
+        <div class="main-image">main-image</div>
+        <div class="side-bar">side-bar</div>
+        <div class="ads">ads</div>
+        <div class="other-stuffs">Other-stuffs</div>
+        <div class="footer">footer</div>
+
+    </div>
+
+    
+    
+</body>
+</html>
